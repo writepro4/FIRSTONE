@@ -18,6 +18,9 @@ fom.xml 자바버전 확인
 java compiler 버전 확인
 project facets 버전 확인
 jre 버전 확인 
+--------------------------
+maven 안될때 
+https://blog.naver.com/writepro4/221526224454
 --------------------
 - 로그 레벨
 https://mdj1234.tistory.com/63
