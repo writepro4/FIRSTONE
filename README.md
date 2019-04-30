@@ -11,7 +11,8 @@ https://gist.github.com/ihoneymon/652be052a0727ad59601
 ------------------------------
 - 인코딩 방법
 -------------
-- maven 오류 해결방법
+- Maven에서 dependency 추가 안될때
+https://jinseong0928.blogspot.com/2012/10/maven-dependency-missing-artifact.html
 --------------------
 - 로그 레벨
 https://mdj1234.tistory.com/63
