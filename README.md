@@ -13,3 +13,6 @@ https://gist.github.com/ihoneymon/652be052a0727ad59601
 -------------
 - maven 오류 해결방법
 --------------------
+- 로그 레벨
+https://mdj1234.tistory.com/63
+------------------------------
