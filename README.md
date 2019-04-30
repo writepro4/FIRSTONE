@@ -28,3 +28,6 @@ https://mdj1234.tistory.com/63
 - 스프링에 흐름 이해하기
 https://epthffh.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81Spring-MVC-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%ACModel-View-Controller-Framework?category=687611
 --------------------------------
+- 스프링 타일즈 프레임워크 설정해보기 
+https://epthffh.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%83%80%EC%9D%BC%EC%A6%88-Spring-Tile-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EA%B8%B0
+------------------
