@@ -34,3 +34,6 @@ https://epthffh.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%83%80%EC%9D%BC
 - 스프링 프로젝트 분석
 https://addio3305.tistory.com/37?category=772645
 -----------
+-Spring MVC - home.jsp의 동작원리
+https://all-record.tistory.com/165
+---------
