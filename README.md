@@ -37,3 +37,5 @@ https://addio3305.tistory.com/37?category=772645
 -Spring MVC - home.jsp의 동작원리
 https://all-record.tistory.com/165
 ---------
+MultipartResolver 설정
+----------
