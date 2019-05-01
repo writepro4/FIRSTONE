@@ -21,7 +21,7 @@ jre 버전 확인
 --------------------------
 maven 안될때 
 https://blog.naver.com/writepro4/221526224454
---------------------
+--------------------------------
 - 로그 레벨
 https://mdj1234.tistory.com/63
 ------------------------------
@@ -36,6 +36,9 @@ https://addio3305.tistory.com/37?category=772645
 -----------
 -Spring MVC - home.jsp의 동작원리
 https://all-record.tistory.com/165
----------
+--------------------------------
 MultipartResolver 설정
-----------
+----------------------
+한번 정독하기 spring 기초부분
+https://epthffh.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81Spring-MVC-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%ACModel-View-Controller-Framework?category=687611
+--------------------------------
