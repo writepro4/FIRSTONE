@@ -20,11 +20,62 @@ View - 컨트롤러의 처리 결과 화면을 생성, JSP 또는 Velocity 템�
 - ViewResolver 설정 (컨트롤러가 전달한 값을 이용해서 응답 화면을 생성할 뷰를 결정)
 - JSP나 Velocity 등을 이용하여 뷰영역의 코드를 작성
 
-3.1
+3.1 DispatcherServlet 설정 및 스프링 컨텍스트 설정
+- web.xml(자바 웹 어플리케이션 설정 파일)에 DispathcerServlet 설정 및 공통으로 사용할 어플리케이션 컨텍스트 설정
+- <servlet> 태그를 이용하여 DispatcherServlet 설정
+- <servlet-mapping> 태그를 이용하여 요청 URL 패턴 설정
+
+3.2 컨트롤러 구현 및 설정 추가
+- @Controller 어노테이션을 클래스에 적용
+- @RequestMapping 어노테이션을 이용해서 클라이언트의 요청을 처리할 메서드를 지정
+- ModelAndView는 컨트롤러의 처리 결과를 보여줄 뷰와 뷰에서 출력할 모델을 지정
+- DispatcherServlet은 스프링 컨테이너에서 컨트롤러 객체를 검색하기 때문에 스프링 설정 파일에 컨트롤러를 빈으로 등록해야 함
+
+3.3 설정 파일 View Resolver 설정 추가
+- 컨트롤러에서 ModelAndView.setViewName() 메서드로 뷰이름을 지정
+- 이 뷰이름과 매칭되는 뷰 구현체를 찾기 위해 ViewResolver를 사용
+- prefix 프로퍼티와 suffix 프로퍼티를 지정
+
+3.4 뷰 코드 구현
+- ModelAndView.addObject() 메서드로 모델을 추가할 때 사용한 이름을 이용해서 모델의 값을 사용
+
+3.5 실행
+- 컨트롤러의 지정된 URL 요청을 주소창에 입력
 ------------------------------------------------------------
+4. DispatcherServlet 설정과 ApplicationContext의 관계
+- web.xml 파일에 한 개 이상의 DispatcherServlet 설정할 수 있으며, 각각 한 개의 WebApplicationContext를 갖는다.
 ------------------------------------------------------------
+4.1 DispatcherServlet 설정
+- DipatcherServlet는 기본적으로 /WEB-INF/ 디렉터리에 위치한 [서블릿이름]-servlet.xml파일로부터 스프링 설정 정보를 읽어 옴
+- 한개 이상의 설정 파일, 또는 설정 다른 이름의 설정 파일을 사용할 경우 contextConfigLocation 초기화 파라미터에 설정 파일 목록을 지정 
+- 설정 파일 구분은 콤마("."), 공백 문자(" "), 탭(\t), 줄바꿈(\n), 세미콜론(",")을 이용
+
+4.2 ApplicationContext 설정
+- 한 개 이상의 DispatcheerServlet을 사용할 때 별도의 WebApplicationContext를 생성
+- 이 경우 공통 빈을 필요로 할 때 ContextLoaderListener를 사용하여 사용될 빈을 설정
+- ServletListener로 등록, contextConfigLocation 컨텍스트 파라미터를 이용, 공통으로 사용될 빈 정보를 담고 있는 설정 파일 목록을 지정
+- ContextLoaderListener가 생성하는 WebApplicationContext는 웹 어플리케이션의 루트 컨텍스트
+- DispatcherServlet이 생성하는 WebApplicationContext는 루트 컨텍스트를 부모로 사용하는 자식 컨텍스트
+- ContextLoaderListener는 contextConfigLocation 컨텍스트 파라미터를 명시하지 않으면 /WEB-INF/applicationContext.xml을 설정 파일로 사용 
 ------------------------------------------------------------
+5. 캐릭터 인코딩 처리 필터 설정
+- 모든 컨트롤러에서 response.setCharacterEncoding() 코드를 실행하는 번거로움을 해소하기 위해 서블릿 필터를 이용 처리
+- 서블릿 필터에서 캐릭터 인코딩을 설정할 수 있는 CharacterEncodingFilter클래스를 제공
+- web.xml파일에 설정
 ------------------------------------------------------------
+6. 컨트롤러 구현
+- 스프링 3.0 버전 부터는 @Controller 어노테이션을 이용해서 컨트롤러 클래스를 구현하도록 권장
+
+6.1 @Controller 어노테이션. @RequestMapping 어노테이션
+- 컨트롤러 클래스에 @Controller 어노테이션 적용
+- 클라이언트의 요청을 처리할 메서드에 @RequestMapping 어노테이션 적용
+- 설정 파일에 컨트롤러 클래스를 빈으로 등록
+- @RequestMapping 어노테이션은 해당 메서드에서 처리할 URI를 값으로 갖는다.
+- @RequestMapping 어노테이션의 메서드의 리턴 타입은 상황에 따라 알맞은 타입을 선택
+
+6.2 컨트롤러 메서드 HTTP 전송 방식(method) 한정
+- 하나의 요청 URL에 대해 HTTP GET 요청과 POST요청을 한 개의 컨트롤러에서 처리할 경우
+- @RequestMapping 어노테이션의 method 속성을 이용해서 메서드가 처리할 HTTP 메서드를 제한
 ------------------------------------------------------------
 ------------------------------------------------------------
 ------------------------------------------------------------
