@@ -45,3 +45,6 @@ https://epthffh.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81Spring-MVC-%ED%94%8
 스프링 개발 예제 
 https://addio3305.tistory.com/83
 --------------------------------
+스프링 bean의 개념과 bean scope의 종류
+https://gmlwjd9405.github.io/2018/11/10/spring-beans.html
+----------------------------------------------------------
