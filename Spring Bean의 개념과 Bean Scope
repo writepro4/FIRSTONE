@@ -22,3 +22,12 @@ Spring Bean Scope
 	- 그래서 우리는 스프링을 통해 baen을 제공받으면 주입받은 bean은 동일한 객체라는
 	가정하에 개발을 함
 -request, session, global session의 scope는 일반 spring어플리케이션이 아닌, spring MVC Web Application에서만 사용
+
+Scope / Description
+singleton - 하나의 Bean정의에 대해서 Spring IOC Container 내에 단 하나의 객체만 존재한다.
+prototype - 하나의 Bean 정의에 대해서 다수의 객체가 존재할 수 있다.
+request = 하나의 Bean 정의에 대해서 하나의 HTTP request의 생명주기 안에 단 하나의 객체만 존재한다.
+	 즉, 각각의 HTTP request는 자신만의 객체를 가진다.
+	 Web-aware SpringApplicationContext안에서만 유효하다.
+global session - 하나의 bean정의에 대해서 하나의 globalHTTP Session의 생명주기 안에 단 하나의 객체만 존재한다
+		Pro
