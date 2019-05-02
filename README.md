@@ -51,3 +51,5 @@ https://gmlwjd9405.github.io/2018/11/10/spring-beans.html
 스프링 이메일 사용하기 
 https://m.blog.naver.com/PostView.nhn?blogId=software705&logNo=220658726304&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 ------------------------------------------------------------------------------------------------------------------------
+어노테이션 종류 
+---------------------
