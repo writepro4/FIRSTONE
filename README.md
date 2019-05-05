@@ -59,7 +59,7 @@ https://m.blog.naver.com/PostView.nhn?blogId=heoguni&logNo=130169468992&proxyRef
 https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
 --------------------------------------------------------------
 JSON 이란?
-https://nesoy.github.io/articles/2017-02/JSON
+https://nesoy.github.io/articles/2017-02/JSON 생활코딩 https://www.youtube.com/watch?v=MDK3xB6SuQk
 -----------------------------------------------
 깃허브 푸쉬오류 
 https://m.blog.naver.com/sim4858/220924984480
