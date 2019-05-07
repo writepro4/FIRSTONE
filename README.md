@@ -70,6 +70,8 @@ https://gbsb.tistory.com/114
 5월 내로 페이지 수정할 예정입니다. markdown 언어 
 ===============================================
 아마존 서버 https://opentutorials.org/course/2717/11275
--------------
+-----------------------------------------------------
+sts4 Database Connection 없을때 http://blog.naver.com/PostView.nhn?blogId=gingsero&logNo=221026840250&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
+------------------------------------------------------------------------------------------------------------------
 
 
