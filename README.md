@@ -73,5 +73,6 @@ https://gbsb.tistory.com/114
 -----------------------------------------------------
 sts4 Database Connection 없을때 http://blog.naver.com/PostView.nhn?blogId=gingsero&logNo=221026840250&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
 ------------------------------------------------------------------------------------------------------------------
-
+Mybatis에서 #{}과 ${}의 차이 https://logical-code.tistory.com/25
+-----------------------------------------------------------------
 
