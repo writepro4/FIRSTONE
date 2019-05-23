@@ -93,4 +93,5 @@ jstl 사용방법 https://programmingsummaries.tistory.com/84
 ----------------------------------------------------------
 네트워크 관련 자료1 https://m.blog.naver.com/PostView.nhn?blogId=khc00013&logNo=30173205549&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 ---------------------------------------------------------------------------------
-
+세션처리 방법 다시보기
+----------------------
