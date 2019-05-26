@@ -96,4 +96,6 @@ jstl 사용방법 https://programmingsummaries.tistory.com/84
 세션처리 방법 다시보기
 ----------------------
 제이쿼리란? https://opentutorials.org/course/53/45
-------------
+----------
+page 인코딩 방법
+---------------
