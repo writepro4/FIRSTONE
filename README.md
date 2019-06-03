@@ -99,3 +99,5 @@ jstl 사용방법 https://programmingsummaries.tistory.com/84
 ----------
 page 인코딩 방법
 ---------------
+오라클 쿼리문 정리 https://diyall.tistory.com/550
+----------------------------------------------
